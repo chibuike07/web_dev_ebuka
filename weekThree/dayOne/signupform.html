@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up form</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+      }
+
+      .wrapper {
+        width: 70%;
+        margin: auto;
+        min-height: 90vh;
+        transform: translateY(7%);
+        background-color: green;
+        background: url("../../weekTwo/dayOne/-1136756154399041456_97.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: color-burn;
+      }
+
+      .main {
+        width: 70%;
+        min-height: 70vh;
+        transform: translateY(10%);
+        margin: auto;
+        /* background-color: rgba(255, 255, 255, 0.5); */
+        background-color: white;
+        opacity: 0.7;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0.5rem;
+      }
+      .header {
+        margin-bottom: 1rem;
+      }
+      .header h3 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .form {
+        line-height: 2.5;
+        text-align: center;
+      }
+      .form > input {
+        width: 70%;
+        height: 2em;
+        border-radius: 10px;
+        padding: 0rem 1rem;
+        border: none;
+        outline: none;
+        box-shadow: 0px 0px 5px gray;
+      }
+
+      .btn_wrap {
+        width: 100%;
+        padding: 0.5rem;
+        text-align: center;
+      }
+
+      .btn_wrap button {
+        width: 70%;
+        height: 2em;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        text-transform: capitalize;
+        background: linear-gradient(to right, #9daee4, #79e1d6);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <main class="main">
+          <header class="header">
+            <h3>create account</h3>
+          </header>
+          <form class="form">
+            <input type="text" name="name" placeholder="Your name" /><br />
+            <input type="email" name="email" placeholder="Your email" /><br />
+            <input
+              type="password"
+              name="password"
+              placeholder="Your password"
+            /><br />
+            <input type="password" placeholder="repeat password" /><br />
+
+            <div class="radio_wrap">
+              <input type="radio" name="check" />
+              <span
+                >i agree all statement <a href="#">terms of condition</a></span
+              >
+            </div>
+
+            <div class="btn_wrap">
+              <button>sign up</button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

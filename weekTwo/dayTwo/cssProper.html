@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>internal css</title>
+    <style>
+      div {
+        /* background-color: red !important; */
+        background-color: red;
+      }
+
+      /* specificity */
+      /* id1 c/a0 div0 */
+      .container {
+        background-color: green;
+      }
+
+      #wrapper {
+        background-color: blue;
+      }
+
+      [ebuka="wrappers"] {
+        background-color: orange;
+      }
+
+      /* group elements */
+      .group p {
+        color: yellow;
+      }
+
+      .group .group_para {
+        color: purple;
+      }
+
+      .attrib p[id="para"] {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>internal css</h2>
+    <!-- a class is added as an attribute to an element -->
+    <!-- selector: tagname, classname, id, attribute: declaration: {css properties - color: props value - red} -->
+
+    <div>content</div>
+
+    <div class="container">you</div>
+
+    <article class="container"></article>
+
+    <div id="wrapper">id cover</div>
+
+    <section ebuka="wrappers">section id</section>
+
+    <div class="group">
+      <p class="group_para">Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div class="attrib">
+      <p title="para" id="para">connect</p>
+      <p>hello</p>
+    </div>
+  </body>
+</html>

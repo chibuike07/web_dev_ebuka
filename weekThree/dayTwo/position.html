@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      .container {
+        background-color: red;
+        margin: 1rem;
+        height: 20vh;
+        width: 30%;
+      }
+
+      .container .relative {
+        position: relative;
+        top: 0%;
+        /* left: 50%; */
+        /* right: 10%; */
+      }
+
+      .container .absolut {
+        color: blue;
+        position: absolute;
+        /* top: 0%; */
+        /* bottom: 0%; */
+        /* right: 10%; */
+      }
+      .fix {
+        height: 60vh;
+        overflow: auto;
+      }
+      .container .fixed {
+        color: blue;
+        position: fixed;
+        bottom: 10%;
+        font-size: 1.4rem;
+      }
+
+      .container .sticky {
+        color: blue;
+        position: sticky;
+        /* top: 20%; */
+        /* bottom: 10%; */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>position</h2>
+    <!-- type of position -->
+    <!-- relative, absolute, fixed, sticky, static -->
+    <h2>heading</h2>
+
+    <div class="container"><small class="relative">Lorem.</small></div>
+    <div class="container"><small class="absolut">Maiores!</small></div>
+    <div class="container fix">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempora
+      quidem reprehenderit sequi, eum voluptas a dicta enim fugiat unde fuga
+      mollitia quod explicabo laborum minima<small class="sticky">Nam!</small>
+      tempore aspernatur, tenetur dolores! Consequuntur illo molestias
+      doloremque dolore accusantium eius a aperiam eum atque. Alias dolor fuga
+      cumque. Repellat minima, doloribus natus, et magni possimus incidunt
+      commodi maiores nesciunt eligendi eum, animi illum non voluptatibus nisi.
+      Et voluptatem minus, sunt assumenda quibusdam repellat ipsa perferendis
+      hic at facere quasi reprehenderit. Maxime reprehenderit aliquam quo ipsum
+      impedit dolore voluptas voluptates odio odit. Soluta excepturi nostrum,
+      similique ducimus aliquam esse ea? Quisquam obcaecati autem commodi?
+    </div>
+    <div class="container fix">
+      <small
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus
+        quaerat vero <small class="fixed">facere</small> consequuntur quae animi
+        quod debitis deleniti facilis, explicabo ipsum! Cupiditate, deleniti
+        saepe commodi illum tenetur quisquam tempora assumenda magni quia
+        dolores ex eveniet quis necessitatibus in. Dolorem enim ducimus soluta
+        eum voluptate vero quam, iusto laboriosam fugit! Provident consectetur
+        sapiente iste quam, incidunt voluptatum quibusdam, expedita deleniti
+        nulla omnis molestiae perspiciatis tenetur soluta ducimus dolorum! Quis
+        doloribus ex repellendus beatae a? Nobis obcaecati, voluptatum fugit
+        numquam quod autem dignissimos facilis et enim facere dolor nemo
+        excepturi voluptas dicta nisi consequatur eos cum suscipit dolorum quas
+        culpa sapiente?.</small
+      >
+    </div>
+  </body>
+</html>

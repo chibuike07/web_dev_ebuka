@@ -1,0 +1,1 @@
+* build a cv page without adding any styling;

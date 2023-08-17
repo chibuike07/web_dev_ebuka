@@ -1,0 +1,3 @@
+* create a a table that has two heading and 5 items in the table;
+* create a list add the following sections: food, vegetable, animals and list 3names each
+* create a signup form that has email, password and categories - add two categories with a submit button

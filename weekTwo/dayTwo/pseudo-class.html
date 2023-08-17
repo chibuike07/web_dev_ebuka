@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo class</title>
+    <style>
+      /* .container :first-child {
+        color: red;
+      }
+      .container :last-child {
+        color: green;
+      } */
+
+      .container :nth-child(1) {
+        color: red;
+      }
+
+      .container :nth-child(2) {
+        color: green;
+      }
+      .container :nth-child(3) {
+        color: orange;
+      }
+
+      /* .lists :nth-child(n) {
+        color: purple;
+      } */
+
+      /* .lists :nth-child(even) {
+        color: purple;
+      } */
+
+      /* .lists :nth-child(odd) {
+        color: purple;
+      } */
+
+      /* .lists :nth-child(3n + 1) {
+        color: purple;
+      } */
+
+      .lists :nth-child(2n + 2) {
+        color: purple;
+      }
+
+      .link:visited {
+        color: firebrick;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>pseudo class</h2>
+    <!-- it is used inline with a selector -->
+    <!--it must start with a column - : -->
+
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p class="">Dicta ducimus nisi error delectus!</p>
+      <p>Quod id hic accusantium voluptate.</p>
+    </div>
+
+    <ul class="lists">
+      <li>marker</li>
+      <li>marker</li>
+      <li>marker</li>
+      <li>marker</li>
+      <li>marker</li>
+      <li>marker</li>
+    </ul>
+
+    <a href="#" class="link">link</a>
+  </body>
+</html>

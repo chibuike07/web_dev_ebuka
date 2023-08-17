@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex box</title>
+
+    <style>
+      .parent {
+        display: flex;
+        background-color: red;
+        min-height: 80vh;
+        /* flex-direction: row; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        justify-content: space-between;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        flex-flow: row wrap;
+      }
+
+      .parent .child {
+        background-color: green;
+        height: 30vh;
+        width: 30%;
+        min-width: 200px;
+        border-right: 2px solid red;
+        flex: 1;
+
+        /* margin: 0.5rem; */
+      }
+
+      .parent .child:nth-child(2) {
+        align-self: baseline;
+        height: 40vh;
+        width: 30%;
+        /* flex-shrink: stretch; */
+        /* flex-grow: 0.5; */
+        /* flex-basis: 50%; */
+        /* flex-shrink: stretch; */
+      }
+
+      .parentTwo {
+        background-color: orange;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-end; */
+        /* align-items: flex-start; */
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .parentTwo .child {
+        height: 30vh;
+        width: 30%;
+        background-color: aqua;
+        border-right: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"><small>i am first born</small></div>
+      <div class="child"><small>i am second born</small></div>
+      <div class="child"><small>i am third born</small></div>
+    </div>
+    <div class="parentTwo">
+      <div class="child"><small>i am first born</small></div>
+      <div class="child"><small>i am second born</small></div>
+      <div class="child"><small>i am third born</small></div>
+    </div>
+  </body>
+</html>
