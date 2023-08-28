@@ -1,0 +1,6 @@
+1. create a car object that contains name, color, door, category
+2. declare an array of fruits (5 lists)
+3. get the name and color of the car object;
+4. get the index of the fruits called apple from the fruits array
+5. add new items to the end of the fruits array;
+6. remove the fruit called apple from the fruits array;

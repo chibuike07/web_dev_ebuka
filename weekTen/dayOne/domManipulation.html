@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom</title>
+  </head>
+  <body>
+    <div class="textWrap">
+      <h2 id="heading">document object modal</h2>
+      <ul id="lists">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+      </ul>
+      <strong id="result"></strong>
+      <form action="javascript:;" onsubmit="multiply()">
+        <input type="number" id="input1" name="text" placeholder="enter text" />
+        <input type="number" id="input2" name="text" placeholder="enter text" />
+
+        <button>multiply</button>
+      </form>
+    </div>
+
+    <script src="./function.js"></script>
+    <script>
+      const heading = document.getElementById("heading");
+      const lists = document.querySelectorAll("#lists li");
+
+      //   access the lists element
+      lists.forEach(function (value) {
+        console.log("value", value);
+        // create a listner to know when each list is clicked
+        value.addEventListener("click", function (e) {
+          //   replace the heading text with the list item that was clicked
+          heading.textContent = e.target.textContent;
+        });
+      });
+
+      console.log("lists", lists);
+      heading.style.textTransform = "uppercase";
+      heading.style.color = "#ff0000";
+      //   const wrapper = document.getElementsByClassName("textWrap")[0];
+      const wrapper = document.querySelector(".textWrap");
+      console.log("wrapper.innerHTML", wrapper.innerHTML);
+      console.log("wrapper.innerText", wrapper.innerText);
+      console.log("wrapper", wrapper);
+      console.log("heading", heading.innerHTML);
+      console.log("headingText", heading.innerText);
+      console.log("headingContext", heading.textContent);
+    </script>
+  </body>
+</html>
